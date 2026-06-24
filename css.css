@@ -1,0 +1,414 @@
+/* DESIGN SYSTEM COLOR CONSTANTS & RESET*/
+:root {
+    --navy-dark: #070B19;      /* Darkest body background */
+    --navy-card: #1C2541;      /* Slightly lighter navy for cards */
+    --teal-accent: #48CAE4;    /* Main brand accent color */
+    --amber-accent: #FFB703;   /* Highlight/warning button accent color */
+    --white: #FFFFFF;
+    --text-gray: #A2A9B8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Clean, beginner-friendly standard font */
+}
+
+body {
+    background-color: var(--navy-dark);
+    color: var(--white);
+}
+
+/* Reusable Layout Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* NAVIGATION STYLING (FLEXBOX SETUP)*/
+   .navbar {
+    background-color: var(--navy-dark);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 15px 0;
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logo-image {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--white);
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-item {
+    color: var(--text-gray);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-item:hover, .nav-item.active {
+    color: var(--teal-accent);
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 10px;
+}
+
+.btn-login {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.btn-login:hover {
+    color: var(--teal-accent);
+}
+
+.btn-signup {
+    background-color: var(--amber-accent);
+    color: #000000;
+    padding: 8px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-signup:hover {
+    opacity: 0.9;
+}
+
+/* Hamburger Hidden on Large Desktop screens */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: var(--white);
+    border-radius: 2px;
+}
+
+/*  HERO SECTION STYLING */
+.hero {
+    padding: 80px 0;
+    background: linear-gradient(180deg, var(--navy-dark) 0%, #0B132B 100%);
+}
+
+.hero-flex {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-title {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    color: var(--text-gray);
+    margin-bottom: 30px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-primary {
+    background-color: var(--teal-accent);
+    color: #000000;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+.btn-secondary {
+    border: 1px solid var(--text-gray);
+    color: var(--white);
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.hero-main-image {
+    width: 100%;
+    height: auto;
+    max-height: 420px;
+    object-fit: cover; /* Crops the image neatly inside the container */
+    border-radius: 8px; /* Smooths the display corners */
+    border: 1px solid rgba(72, 202, 228, 0.25); /* Subtle teal glow frame */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6); /* Gives it realistic screen depth */
+}
+
+.placeholder-graphic {
+    background-color: var(--navy-card);
+    border: 2px dashed var(--teal-accent);
+    border-radius: 10px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.placeholder-graphic span {
+    font-size: 1.5rem;
+    color: var(--teal-accent);
+    font-weight: bold;
+}
+
+   /* FEATURED SERVICES SECTION STYLING (GRID LAYOUT)*/
+.services {
+    padding: 60px 0;
+}
+
+.section-title-box {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title-box h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.section-title-box p {
+    color: var(--text-gray);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 clean columns */
+    gap: 30px;
+}
+
+.service-card {
+    background-color: var(--navy-card);
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px); /* Simple hover lift effect */
+    border-color: var(--teal-accent);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.service-card p {
+    color: var(--text-gray);
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+.card-link {
+    color: var(--teal-accent);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* FOOTER SECTION STYLING */
+.footer {
+    background-color: #050814;
+    padding: 50px 0 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for footer fields */
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-col h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--white);
+}
+
+.footer-col h4 {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.footer-col p {
+    color: var(--text-gray);
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+.footer-links-list {
+    list-style: none;
+}
+
+.footer-links-list li {
+    margin-bottom: 10px;
+}
+
+.footer-links-list a {
+    color: var(--text-gray);
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.footer-links-list a:hover {
+    color: var(--teal-accent);
+}
+
+.social-box {
+    display: flex;
+    gap: 10px;
+}
+
+.social-item {
+    background-color: var(--navy-card);
+    color: var(--white);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+.social-item:hover {
+    background-color: var(--teal-accent);
+    color: #000000;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    color: var(--text-gray);
+    font-size: 0.90rem;
+}
+
+/*SIMPLE MEDIA QUERIES (RESPONSIVENESS CODES) */
+@media (max-width: 992px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr); /* Drop to 2 columns on tablets */
+    }
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr); /* Footer drops to 2x2 layout */
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex; /* Show menu toggle button on mobile devices */
+    }
+
+    /* Hide the navigation bar items offscreen by default */
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        background-color: var(--navy-dark);
+        padding: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* JavaScript activates this to slide down the menu items layout */
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-buttons {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    
+    .btn-signup {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-flex {
+        flex-direction: column; /* Stacks text above image box */
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .services-grid, .footer-grid {
+        grid-template-columns: 1fr; /* 1 clean straight vertical stack column on small phone widths */
+    }
+}
