@@ -4,35 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acinonex | Freelance Marketplace</title>
-    <!-- Link to our beginner-friendly CSS file -->
     <link rel="stylesheet" href="css.css">
 </head>
 <body>
 
-    <!--  NAVIGATION BAR -->
+  <!--task 1 nav bar-->
     <header class="navbar">
         <div class="container nav-flex">
-            <!-- Website Logo and Name -->
             <a href="index.html" class="logo-area">
                 <img src="acinonex.png" alt="Acinonex Logo" class="logo-image">
                 <span class="logo-text">acinonex</span>
             </a>
-
-            <!-- Navigation Links (Hidden on mobile via CSS, shown via JS toggle) -->
             <nav class="nav-links" id="nav-links">
                 <a href="index.html" class="nav-item active">Home</a>
-                <a href="pages/services.html" class="nav-item">Browse Services</a>
-                <a href="#" class="nav-item">How It Works</a>
-                <a href="#" class="nav-item">About Us</a>
-                
-                <!-- Login/Signup buttons inside nav for easy mobile handling -->
+                <a href="ServicesPage.html" class="nav-item">Browse Services</a>
+                <a href="about.html" class="nav-item">About Us</a>
+                <a href="contact.html" class="nav-item">Contact</a>
                 <div class="nav-buttons">
-                    <a href="#" class="btn-login">Login</a>
-                    <a href="#" class="btn-signup">Sign Up</a>
+                    <a href="log-in.html" class="btn-login">Login</a>
+                    <a href="sign-up.html" class="btn-signup">Sign Up</a>
                 </div>
             </nav>
-
-            <!-- Mobile Hamburger Menu Button -->
             <button class="hamburger" id="hamburger-btn">
                 <span class="line"></span>
                 <span class="line"></span>
@@ -42,121 +34,95 @@
     </header>
 
     <main>
-        <!--  HERO SECTION -->
+      <!--hero section-->
         <section class="hero">
             <div class="container hero-flex">
-                <!-- Left Side: Text and Buttons -->
                 <div class="hero-text">
                     <h1 class="hero-title">Deploy Vetted Freelance Squads Fast</h1>
                     <p class="hero-description">
                         Welcome to Acinonex. Find elite global talent and pre-built developer teams ready to build your next big project with secure milestones.
                     </p>
                     <div class="hero-actions">
-                        <a href="pages/services.html" class="btn-primary">Explore Services</a>
-                        <a href="#" class="btn-secondary">Learn More</a>
+                        <a href="ServicesPage.html" class="btn-primary">Explore Services</a>
+                        <a href="about.html" class="btn-secondary">Learn More</a>
                     </div>
                 </div>
-                
-                <!-- Right Side: Main Hero Image Placeholder -->
-               <div class="hero-image-box">
-                     <img src="hero-tech.jpg" alt="Acinonex Tech Squad Terminal" class="hero-main-image">
-               </div>
+                <div class="hero-image-box">
+                     <img src="squad.png" alt="Acinonex Tech Squad Terminal" class="hero-main-image">
                 </div>
             </div>
         </section>
-
-        <!--  FEATURED SERVICES SECTION -->
+            <!--featured services-->
         <section class="services">
             <div class="container">
-                <!-- Section Title -->
                 <div class="section-title-box">
                     <h2>Popular Marketplace Categories</h2>
                     <p>Choose a category to find top-tier experts right now.</p>
                 </div>
-                
-                <!-- 6 Service Cards Grid -->
                 <div class="services-grid">
-                    <!-- Card 1: Web Dev -->
                     <div class="service-card">
                         <div class="card-icon">💻</div>
                         <h3>Web Development</h3>
                         <p>Build clean, fast, modern websites using HTML, CSS, JavaScript, or modern frameworks.</p>
-                        <a href="pages/services.html" class="card-link">See Sellers &rarr;</a>
+                        <a href="services.html" class="card-link">See Sellers →</a>
                     </div>
-
-                    <!-- Card 2: Graphic Design -->
                     <div class="service-card">
                         <div class="card-icon">🎨</div>
                         <h3>Graphic Design</h3>
                         <p>Get stunning logos, brand designs, UI/UX layouts, and social media flyers.</p>
-                        <a href="pages/services.html" class="card-link">See Sellers &rarr;</a>
+                        <a href="services.html" class="card-link">See Sellers →</a>
                     </div>
-
-                    <!-- Card 3: Video Editing -->
                     <div class="service-card">
                         <div class="card-icon">🎬</div>
                         <h3>Video Editing</h3>
                         <p>Professional video trimming, color grading, motion graphics, and video production.</p>
-                        <a href="pages/services.html" class="card-link">See Sellers &rarr;</a>
+                        <a href="services.html" class="card-link">See Sellers →</a>
                     </div>
-
-                    <!-- Card 4: Digital Marketing -->
                     <div class="service-card">
                         <div class="card-icon">📈</div>
                         <h3>Digital Marketing</h3>
                         <p>Grow your business audience with expert SEO, social media management, and ads.</p>
-                        <a href="pages/services.html" class="card-link">See Sellers &rarr;</a>
+                        <a href="services.html" class="card-link">See Sellers →</a>
                     </div>
-
-                    <!-- Card 5: Content Writing -->
                     <div class="service-card">
                         <div class="card-icon">✍️</div>
                         <h3>Content Writing</h3>
                         <p>High quality articles, copywriting, website text, and translation services.</p>
-                        <a href="pages/services.html" class="card-link">See Sellers &rarr;</a>
+                        <a href="services.html" class="card-link">See Sellers →</a>
                     </div>
-
-                    <!-- Card 6: Mobile App Dev -->
                     <div class="service-card">
                         <div class="card-icon">📱</div>
                         <h3>Mobile App Development</h3>
                         <p>Custom mobile apps built beautifully for both iOS and Android platforms.</p>
-                        <a href="pages/services.html" class="card-link">See Sellers &rarr;</a>
+                        <a href="services.html" class="card-link">See Sellers →</a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!--  FOOTER SECTION -->
+    <!--footer section-->
     <footer class="footer">
         <div class="container footer-grid">
-            <!-- Column 1: Brand Info -->
             <div class="footer-col">
                 <h3>acinonex</h3>
                 <p>Rising from project challenges to deliver high quality digital solutions at elite speeds.</p>
             </div>
-            
-            <!-- Column 2: Quick Links -->
             <div class="footer-col">
                 <h4>Quick Links</h4>
                 <ul class="footer-links-list">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="pages/services.html">Browse Services</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Work</a></li>
+                    <li><a href="ServicesPage.html">Browse Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
-
-            <!-- Column 3: Contact Details -->
             <div class="footer-col">
                 <h4>Contact Info</h4>
-                <p>email= support@acinonex.io</p>
-                <p>phone= +961 81 921 910</p>
-                <p>loaction= Tech Hub, Lebanon</p>
+                <p>email: support@acinonex.io</p>
+                <p>phone: +961 81 921 910</p>
+                <p>location: Tech Hub, Lebanon</p>
             </div>
-
-            <!-- Column 4: Social Icons Media -->
             <div class="footer-col">
                 <h4>Connect With Us</h4>
                 <div class="social-box">
@@ -166,13 +132,11 @@
                 </div>
             </div>
         </div>
-        <!-- Bottom copyright bar -->
         <div class="footer-bottom">
-            <p>&copy; 2026 ACINONEX. All rights reserved.</p>
+            <p>© 2026 ACINONEX. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Link to our basic JavaScript file -->
     <script src="js.js"></script>
 </body>
 </html>

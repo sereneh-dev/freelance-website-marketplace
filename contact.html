@@ -1,0 +1,153 @@
+<!--task 4 contact-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Acinonex</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+    <!--navbar-->
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <a href="index.html" class="logo-area">
+                <img src="acinonex.png" alt="Acinonex Logo" class="logo-image">
+                <span class="logo-text">Acinonex</span>
+            </a>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="ServicesPage.html" class="nav-item">Services</a>
+                <a href="about.html" class="nav-item">About</a>
+                <a href="contact.html" class="nav-item active">Contact</a>
+            </div>
+            <div class="nav-buttons">
+                <a href="log-in.html" class="btn-login">Login</a>
+                <a href="sign-up.html" class="btn-signup">Sign Up</a>
+            </div>
+            <button class="hamburger" id="hamburger-btn">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="contact-section">
+            <div class="contact-grid">
+                <!--contact info side bar-->
+                <div class="contact-info">
+                    <h1>Contact Us</h1>
+                    <p>Have questions about a service, a seller, or need technical support? We are here to help you get started.</p>
+                    
+                    <div class="contact-detail-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email Us </h4>
+                            <p>support@acinonex.io</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+961 81 921 910</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Visit Us</h4>
+                            <p>Tech Hub, Lebanon</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail-item">
+                        <div class="contact-icon">⏰</div>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Mon – Fri: 9:00 AM – 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--contact form-->
+                <div class="contact-form-box">
+                    <div class="form-success" id="form-success">
+                        <strong>Thank you!</strong> Your message has been sent successfully. We will reply within 24 hours.
+                    </div>
+                    <h2>Send a Message</h2>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name">Your Name</label>
+                            <input type="text" id="contact-name" placeholder="Nino" required>
+                            <div class="form-error" id="error-name">Please enter your name.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="useremail">Your Email</label>                          
+                            <input type="email" id="useremail" placeholder="nino@example.com" required>
+                            <div class="form-error" id="error-email">Please enter a valid email address.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Subject</label>
+                            <select id="contact-subject" required>
+                                <option value="">Select a subject...</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="support">Technical Support</option>
+                                <option value="seller">Seller Question</option>
+                                <option value="billing">Billing & Payments</option>
+                            </select>
+                            <div class="form-error" id="error-subject">Please select a subject.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Your Message</label>
+                            <textarea id="contact-message" placeholder="How can we help you?" required></textarea>
+                            <div class="form-error" id="error-message"required>Please enter your message.</div>
+                        </div>
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>acinonex</h3>
+                    <p>Rising from project challenges to deliver high quality digital solutions at elite speeds.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="ServicesPage.html">Browse Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <p><a href="mailto:support@acinonex.io">email: support@acinonex.io</a></p>
+                    <p><a href="tel:+961 921 910">phone: +961 81 921 910</a></p>
+                    <p>location: Tech Hub, Lebanon</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect With Us</h4>
+                    <div class="social-box">
+                        <a href="#" class="social-item">FB</a>
+                        <a href="#" class="social-item">TW</a>
+                        <a href="#" class="social-item">Insta</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 ACINONEX. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js.js"></script>
+</body>
+</html>
